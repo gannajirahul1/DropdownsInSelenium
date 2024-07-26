@@ -1,0 +1,48 @@
+package DropDowns;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class HandlingDropdowns {
+
+	public static void main(String[] args) throws InterruptedException {
+		// Handling Dropdowns
+		ChromeDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		/*driver.get("https://testautomationpractice.blogspot.com/");
+		driver.manage().window().maximize();
+		WebElement drpCountryEle=driver.findElement(By.xpath("//select[@id='country']"));
+		Select drpCountry=new Select (drpCountryEle);
+		*/
+		//drpCountry.selectByVisibleText("India");//visibleText() is the method we can access through by passing names
+		//drpCountry.selectByValue("japan");//selectBy valueis also method just like visible text here we pass value
+		//drpCountry.selectByIndex(3);//It selects the value by index value
+		
+		//getting the size of the options
+		//List<WebElement>options=drpCountry.getOptions();
+		//System.out.println(options.size());//it will return the size of the options
+		//printing all the options through for loop
+		/*
+		 
+		for(int i=0;i<options.size();i++)
+		{
+			System.out.println("The Country Names Are:" + options.get(i).getText());
+		}
+		*/
+		//printing all the options through Enhanced for loop
+		/*
+		System.out.println("The Country Names are:");
+		for(WebElement opt:options)
+		{
+			System.out.println(opt.getText());
+		}
+		*/
+		
+	}
+
+}
